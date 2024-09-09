@@ -1,0 +1,93 @@
+.user-list-container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.user-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.edit-form, .user-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info {
+    font-size: 16px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: calc(50% - 12px);
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    outline: none;
+}
+
+.edit-btn {
+    background-color: #007bff;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    margin-left: 3px;
+}
+
+.submit-btn {
+    background-color: #28a745;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.actions {
+    display: flex;
+}
+
+.edit-form button {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .edit-form, .user-details {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
