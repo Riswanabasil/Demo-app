@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import './LoginForm.css';  // Ensure the CSS file is available in the same directory
+import './LoginForm.css';  
 
 function LoginForm() {
     const [credentials, setCredentials] = useState({ email: '', password: '' });

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './UserList.css'; // Ensure you create and link this CSS file
+import './UserList.css'; 
 
 function UserList() {
     const [users, setUsers] = useState(JSON.parse(localStorage.getItem('users')) || []);
